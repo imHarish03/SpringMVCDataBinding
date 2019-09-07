@@ -9,10 +9,15 @@
 </head>
 <body>
 	<form:errors path="student.*"></form:errors>
-	<form:form action="/SpringMVCDataBindingWebApp/registerSuccess"
+	<form:form action="/dataBind/registerSuccess"
 		method="post" commandName="student">
 		<h2 align="center">Student Registration form</h2>
 		<table align="center">
+			<tr>
+				<th>Basic details</th>
+				<th>User Input</th>
+			</tr>
+
 			<tr>
 				<td>Enter your Name:</td>
 				<td><form:input path="studentName" /></td>
